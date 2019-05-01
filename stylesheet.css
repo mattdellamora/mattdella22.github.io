@@ -1,0 +1,260 @@
+@font-face {
+  font-family: 'La Nord Light';
+  src: local('La Nord Light'),
+       url('/fonts/LaNord-Light.woff2') format('woff2'),
+       url('/fonts/LaNord-Light.woff') format('woff'),
+       url('/fonts/LaNord-Light.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'La Nord Semi Light';
+  src: local('La Nord Semi Light'),
+       url('/fonts/LaNord-SemiLight.woff2') format('woff2'),
+       url('/fonts/LaNord-SemiLight.woff') format('woff'),
+       url('/fonts/LaNord-SemiLight.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'La Nord Regular';
+  src: local('La Nord Semi Light'),
+       url('/fonts/LaNord-Regular.woff2') format('woff2'),
+       url('/fonts/LaNord-Regular.woff') format('woff'),
+       url('/fonts/LaNord-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'La Nord Bold';
+  src: local('La Nord Bold'),
+       url('/fonts/LaNord-Bold.woff2') format('woff2'),
+       url('/fonts/LaNord-Bold.woff') format('woff'),
+       url('/fonts/LaNord-Bold.eot') format('embedded-opentype');
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+body {
+    font-family: "La Nord Semi Light";
+    font-size: 16px;
+    width: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.main {
+/*    background-color: rgba(255, 0, 0, .2);*/
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin-left: 0px;
+    
+    
+}
+
+/*Navbar*/
+.navbar {
+/*    background-color: green;*/
+    width: 100%; 
+    height: 70px;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.navbar ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+.navElement {
+/*    background-color: aqua;*/
+    width: 16.6%;
+    
+    font-size: 1.4em;
+}
+
+.name {
+    font-family: "La Nord Bold";
+    padding-left: 5px;
+}
+
+.contact {
+    padding-left: 10px;
+    width: 66.8%
+}
+
+.about {
+    text-align: right;
+    padding-right: 5px;
+    text-decoration: underline;
+}
+
+/*TEASER*/
+
+.teaser {
+    clear: both;
+    display: flex;
+    margin-top: 70px;
+    margin-left: 5px;
+    width: 100%; 
+    flex-flow: row wrap;
+    position: relative;
+}
+
+.text_bio {
+/*    background-color: rgba(17, 150, 39, .2);*/
+    width: 41.6%; 
+    font-size: 1.96em;
+    
+    
+}
+
+.button_more {
+/*    background-color: chocolate;*/
+    position: absolute;
+    margin-left: 10px;
+    bottom: 0;
+    left: 41.6%;
+}
+
+/*PROJECTS*/
+
+.projects_container {
+    clear: both;
+    display: flex;
+    margin-top: 140px;
+    width: 100%; 
+    flex-flow: row wrap;
+}
+
+.section_title {
+/*    background-color: violet;*/
+    width: 100%; 
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+.project_element{
+    width: 50%;
+    padding-left: 5px;
+    padding-right: 5px; 
+    margin-bottom: 40px;
+}
+
+.project_image img{
+	width: 100%;
+	height: auto;
+}
+
+/*FOOTER*/
+.footer{
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    border-top: 1px solid;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.thankType {
+    padding-left: 5px;
+}
+
+.goUp{
+    padding-right: 5px;
+    text-align: right;
+}
+
+
+/* ==================== MOBILE ==================== */
+@media (min-width: 320px) and (max-width: 480px){
+    .body {
+        font-family: "La Nord Regular";
+        font-size: 18px;
+    }
+    .main {
+/*    background-color: rgba(255, 0, 0, .2);*/
+        width: 100%;
+    }
+    
+    /*NAVBAR*/
+	.navbar {
+    flex-flow: column;
+    height: auto;
+    width: 100%;
+    
+}
+    .navElement {
+    width: 100%;
+    font-size: 1.4em;
+    }
+    
+    .name {
+    font-family: "La Nord Bold";
+    padding-left: 5px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+    .contact {
+        padding-top: 20px;
+        padding-left: 5px;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .about {
+        text-align: left;
+        padding-left: 30px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    
+    /*TEASER*/
+    .teaser {
+        display: flex;
+        margin-top: 70px;
+        margin-left: 5px;
+        width: 100%; 
+        flex-flow: column;
+    }
+    
+    .text_bio {
+/*    background-color: rgba(17, 150, 39, .2);*/
+    width: 100%; 
+    font-size: 1.96em;
+        
+    }
+    
+    .button_more {
+/*    background-color: chocolate;*/
+        margin-left: 30px;
+        width: 100%;
+        position: inherit;
+        left: inherit; 
+        padding-top: 20px;
+        font-size: 18px;
+}
+    
+     /*PROJECTS*/
+    .projects_container {
+        margin-top: 140px;
+        flex-flow: column wrap;
+    }   
+    
+    .project_element{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px; 
+    }
+    
+    
+}/*chiude media query*/
+
+
+
