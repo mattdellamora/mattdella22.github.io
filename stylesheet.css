@@ -78,18 +78,23 @@ body {
 }
 
 .name {
-    font-family: "La Nord Bold";
     padding-left: 5px;
+    order: 1;
+    width: 25%;
 }
 
 .contact {
-    padding-left: 10px;
-    width: 66.8%
+    padding-left: 0px;
+    order: 3;
+    
 }
 
 .about {
-    text-align: right;
-    padding-right: 5px;
+    width: 10%;
+    text-align: left;
+    padding-left: 10px;
+    font-family: "La Nord Regular";
+    order: 2;
     text-decoration: underline;
 }
 
@@ -107,8 +112,9 @@ body {
 
 .text_bio {
 /*    background-color: rgba(17, 150, 39, .2);*/
-    width: 41.6%; 
-    font-size: 1.96em;
+    width: 66.6%; 
+    font-size: 3.8em;
+    line-height: 1.1em;
     
     
 }
@@ -118,7 +124,7 @@ body {
     position: absolute;
     margin-left: 10px;
     bottom: 0;
-    left: 41.6%;
+    left: 66.6%;
 }
 
 /*PROJECTS*/
@@ -157,17 +163,28 @@ body {
     display: flex;
     border-top: 1px solid;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 35px;
 }
 
 .thankType {
+    margin-top: 20px;
     padding-left: 5px;
 }
 
 .goUp{
+    width: 100%;
     padding-right: 5px;
     text-align: right;
 }
+
+.goUp img{
+    width: 45px;
+	height: auto;
+}
+
+br.newLine {
+        display: none;
+    }
 
 
 /* ==================== MOBILE ==================== */
@@ -194,24 +211,25 @@ body {
     }
     
     .name {
-    font-family: "La Nord Bold";
-    padding-left: 5px;
-    padding-top: 10px;
-    width: 100%;
-}
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 10px;
+        width: 100%;
+    }
 
     .contact {
-        padding-top: 20px;
-        padding-left: 5px;
+        padding-top: 30px;
+        padding-left: 20px;
         width: 100%;
         font-size: 20px;
+        margin-bottom: 20px;
+        line-height: 1.68em;
     }
 
     .about {
         text-align: left;
-        padding-left: 30px;
-        padding-top: 70px;
-        padding-bottom: 20px;
+        padding-left: 5px;
+        padding-top: 30px;
         width: 100%;
     }
     
@@ -253,7 +271,15 @@ body {
         padding-right: 5px; 
     }
     
+    /*FOOTER*/
+    .goUp img{
+        width: 35px;
+	   height: auto;
+    }
     
+    br.newLine {
+        display: block;
+    }
 }/*chiude media query*/
 
 
