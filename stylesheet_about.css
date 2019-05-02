@@ -7,9 +7,31 @@
     font-family: "La Nord Bold";
 }
 
-.bio {
-    clear: both;
+.presenting {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
     margin-top: 70px;
+}
+
+.image_matt {
+    /*background-color:aqua;*/
+    width: 58.4%;
+    /*width: 58.4%;*/
+    text-align: left;
+    padding-left: 10px;
+    order: 1;
+    padding-right: 5px;
+}
+
+.image_matt img{
+    width: 100%;
+    /*width: 85.71%;*/
+	height: auto;
+}
+
+.bio {
+    /*background-color:yellow;*/
     margin-left: 5px;
     width: 41.6%; 
     /* DUE COLONNE
@@ -23,6 +45,7 @@
     */
     
     font-size: 1.96em;
+    order: 2;
 }
 
 .curriculum{
@@ -54,9 +77,29 @@
 
 /* ==================== MOBILE ==================== */
 @media (min-width: 320px) and (max-width: 480px){
+    .presenting {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin-top: 70px;
+    }
     .bio {
         width: 100%;
         font-size: 1.4em;
+        order: 2;
+    }
+    
+    .image_matt {
+        /*background-color:aqua;*/
+        width: 100%;
+        text-align: left;
+        padding-left: 5px;
+        order: 1;
+    }
+    
+    .image_matt img{
+        width: 100%;
+	   height: auto;
     }
     
     .curriculum{
