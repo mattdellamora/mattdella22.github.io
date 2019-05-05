@@ -183,10 +183,6 @@ body {
 	height: auto;
 }
 
-br.newLine {
-        display: none;
-    }
-
 
 /* ==================== MOBILE ==================== */
 @media (min-width: 320px) and (max-width: 480px){
@@ -278,9 +274,6 @@ br.newLine {
 	   height: auto;
     }
     
-    br.newLine {
-        display: block;
-    }
 }/*chiude media query*/
 
 
