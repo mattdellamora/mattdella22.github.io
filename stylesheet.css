@@ -164,6 +164,7 @@ body {
     border-top: 1px solid;
     flex-direction: column;
     padding-top: 35px;
+    margin-bottom: 5px;
 }
 
 .thankType {
@@ -244,7 +245,7 @@ br.newLine {
     
     .text_bio {
 /*    background-color: rgba(17, 150, 39, .2);*/
-    width: 100%; 
+    width: 99%; 
     font-size: 1.96em;
         
     }
