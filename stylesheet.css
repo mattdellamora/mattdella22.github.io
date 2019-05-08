@@ -203,8 +203,8 @@ body {
     
 }
     .navElement {
-    width: 100%;
-    font-size: 1.4em;
+        width: 100%;
+        font-size: 1.4em;
     }
     
     .name {
@@ -276,5 +276,19 @@ body {
     
 }/*chiude media query*/
 
+/* ==================== IPHONE X ==================== */
+/*Riportato bug su iphone X... si può scrollare orizzontalmente. Il main occupa orizzontalmente 0.2px in più...*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3){
+    body {
+        /*dovrebbe avere già ereditato queste proprietà fuori dalla mQuery... quindi inutili*/
+        overflow-y: scroll;
+        overflow-x: hidden; 
+    }
+    .main {
+        /*stringo il main, non troppo pulito ma funziona*/
+        width: 99.9%; 
+    }
+}
 
 
