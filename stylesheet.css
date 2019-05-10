@@ -50,14 +50,11 @@ body {
     height: auto;
     padding: 0px;
     margin-left: 0px;
-    
-    
 }
 
 /*Navbar*/
 .navbar {
 /*    background-color: green;*/
-    width: 100%; 
     height: 70px;
     border-bottom: 1px solid;
     display: flex;
@@ -199,7 +196,6 @@ body {
 	.navbar {
     flex-flow: column;
     height: auto;
-    width: 100%;
     
 }
     .navElement {
@@ -285,12 +281,9 @@ body {
         overflow-x: hidden !important;
     }
     .main {
-        /*stringo il main, non troppo pulito ma funziona*/
-        width: 99.9%; 
-    }
-    img {
-        overflow: hidden;
+        width: calc(100% - 0.2px);
     }
 }
+*/
 
 
