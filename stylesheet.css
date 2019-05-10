@@ -118,10 +118,9 @@ body {
 
 .button_more {
 /*    background-color: chocolate;*/
-    position: absolute;
-    margin-left: 10px;
+    margin-left: calc(66.6% + 10px);
     bottom: 0;
-    left: 66.6%;
+    /*left: 66.6%;*/
 }
 
 /*PROJECTS*/
@@ -246,8 +245,6 @@ body {
 /*    background-color: chocolate;*/
         margin-left: 30px;
         width: 100%;
-        position: inherit;
-        left: inherit; 
         padding-top: 20px;
         font-size: 18px;
 }
