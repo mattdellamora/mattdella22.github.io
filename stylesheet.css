@@ -188,7 +188,7 @@ body {
     }
     .main {
 /*    background-color: rgba(255, 0, 0, .2);*/
-        width: 100%;
+        width: calc(100% - 5px);
     }
     
     /*NAVBAR*/
@@ -243,8 +243,8 @@ body {
     
     .button_more {
 /*    background-color: chocolate;*/
-        margin-left: 30px;
-        width: 100%;
+        margin-left: 0px;
+        width: calc(100% - 5px);
         padding-top: 20px;
         font-size: 18px;
 }
@@ -278,7 +278,7 @@ body {
         overflow-x: hidden !important;
     }
     .main {
-        width: calc(100% - 0.2px);
+        width: calc(100% - 5px);
     }
 }
 */
