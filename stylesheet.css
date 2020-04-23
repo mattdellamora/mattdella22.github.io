@@ -53,6 +53,7 @@ body {
     height: auto;
     padding: 0px;
     margin-left: 0px;
+    padding: 17px 17px 0px 17px;
 }
 
 /*Navbar*/
@@ -164,8 +165,8 @@ body {
     display: flex;
     border-top: 1px solid;
     flex-direction: column;
-    padding-top: 35px;
-    margin-bottom: 50px;
+    padding-top: 30px;
+    margin-bottom: 40px;
 }
 
 .thankType {
@@ -180,6 +181,9 @@ body {
 }
 
 .goUp img{
+    /*position: absolute;*/
+    margin-left: calc(50% - 22px); /*togliere metà img...*/
+    margin-right: 50%;
     width: 45px;
 	height: auto;
 }
@@ -194,6 +198,7 @@ body {
     .main {
 /*    background-color: rgba(255, 0, 0, .2);*/
         width: calc(100% - 5px);
+        padding: 0px 0px 0px 0px;
     }
     
     /*NAVBAR*/
@@ -256,7 +261,7 @@ body {
     
      /*PROJECTS*/
     .projects_container {
-        margin-top: 140px;
+        margin-top: 70px;
         flex-flow: column wrap;
     }   
     
@@ -268,8 +273,9 @@ body {
     
     /*FOOTER*/
     .goUp img{
+        margin-left: calc(50% - 17px);
         width: 35px;
-	   height: auto;
+	    height: auto;
     }
     
 }/*chiude media query*/
