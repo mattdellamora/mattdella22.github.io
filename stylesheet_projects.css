@@ -39,6 +39,10 @@
     padding-right: 5px;
 }
 
+.border{
+    border-radius: 1px solid black;
+}
+
 .pj_img img{
 	width: 100%;
 	height: auto;

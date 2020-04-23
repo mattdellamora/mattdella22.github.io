@@ -43,49 +43,46 @@
     /*width: 85.5%; */
     /*DUE COLONNE*/
     width: 83.33%; 
-    -webkit-column-count: 2; 
-    -moz-column-count: 2; 
-    column-count: 2;
-    -webkit-column-gap: 50px; 
-    -moz-column-gap: 50px; 
-    column-gap: 50px;
+    /*-webkit-column-count: 2; */
+    /*-moz-column-count: 2; */
+    /*column-count: 2;*/
+    /*-webkit-column-gap: 50px; */
+    /*-moz-column-gap: 50px; */
+    /*column-gap: 50px;*/
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
     hyphens: auto;
 
     
-    font-size: 1.4em;
+    font-size: 1.96em;
     order: 1;
 }
 
 .curriculum{
     /*background-color: rgba(255, 0, 0, 0.3);*/
-    width: calc(37.5% + 40px);
+    width: 100%;
     display: flex;
     height: auto;
-    flex-flow: column wrap;
+    flex-direction: row;
+    flex-flow: row wrap;
     margin-top: 70px;
+    margin-left: 5px;
     order: 2;
     
 }
-.cv_element {
-    width: 100%;
-    margin-top: 20px;
+.cv_group{
+    /*width: calc(37.5% + 40px);*/
+    width: 39%;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    flex-flow: column;
 }
-.categories {
-    padding-left: 0px;
-    /*background-color: rgba(0, 255, 0, 0.3);*/
-    width: 33.33%;
+.cv_element {
+    /*width: 100%;*/
+    margin-top: 20px;
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
 }
-
-.values {
-    /*background-color: rgba(0, 0, 255, 0.3);*/
-    width: 66.66%;
-    padding-left: 0px;
-}
-
 
 
 /* ==================== MOBILE ==================== */
@@ -137,6 +134,9 @@
     .curriculum{
         width: 100%;
         font-size: 14pt;
+    }
+    .cv_group{
+        width: 100%;
     }
 
 }
