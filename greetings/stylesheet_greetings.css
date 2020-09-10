@@ -1,0 +1,51 @@
+#content{
+    position: absolute;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.greeting-title{
+    width: 66.8% !important;
+    text-align: center;
+    order: 2;
+}
+
+.greeting-text{
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+
+.blank{
+    order: 3;
+    width: 16.6%
+}
+
+#sketch{
+    padding: 5px 5px 2px 5px;
+    border: 4px solid black;
+    margin-bottom: 7px;
+}
+
+
+/* ==================== MOBILE ==================== */
+@media (min-width: 320px) and (max-width: 480px){
+    #content{
+        margin-top: 70px;
+    }
+
+    .greeting-title{
+        margin-top: 30px;
+        text-align: left;
+    }
+    #sketch{
+        border: none;
+    }
+        
+    .greeting-text{
+        font-size: 1em;
+        margin-bottom: 50px;
+        padding-left: 5px;
+    }
+
+}/*chiude media query*/
