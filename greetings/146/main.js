@@ -28,9 +28,10 @@ let rows = 50;
 let cellW, cellH
 
 const string = "146"
-const animTime = 60
+const animTime = 35
 let t = animTime
-const maxHeight = 32
+let maxHeight = 32
+let blurQty = 6
 
 let mouseIsClicked = true
 let preventFirst = false
@@ -128,7 +129,7 @@ function getValues(){
   pg.translate(pg.width*0.09+bbox.w/2, pg.height/2-bbox.h/4)
   pg.text(string, 0, 0)
   pg.pop()
-  pg.filter(BLUR, 6);
+  pg.filter(BLUR, blurQty);
   _values = []
   for(let i = 0; i<pg.height; i++){
     for(let j = 0; j<pg.height; j++){
@@ -156,15 +157,19 @@ function reset() {
         parentContent.style.left = parentLeft + "px";
         isOnMobile = false
 
+        blurQty = 6
+        maxHeight = 32
         cols = 70;
         rows = 50;
     } else {
         cnvWidth = windowWidth-10
         cnvHeight = (cnvWidth/15)*9
         isOnMobile = true
-
+        
+        blurQty = 4.2
+        maxHeight = 16
         cols = 50;
-        rows = 40;
+        rows = 45;
     }
 
     let cnv = createCanvas(cnvWidth, cnvHeight)
