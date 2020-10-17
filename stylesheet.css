@@ -85,6 +85,7 @@ body {
 }
 
 .contact {
+    width: 250px; 
     font-size: 1em;
     text-decoration: underline;
     padding-left: 0px;
@@ -93,7 +94,8 @@ body {
 }
 
 .about {
-    width: 58.4%;
+    width: calc(77.8% - 300px);
+    /* width: 44.5%; */
     text-align: left;
     padding-left: 10px;
     font-family: "La Nord Regular";
