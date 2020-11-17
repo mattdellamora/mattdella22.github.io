@@ -147,7 +147,7 @@ function reset() {
         cnvHeight = (cnvWidth/15)*9
         isOnMobile = true
         
-        blurQty = 2
+        blurQty = 1
         cols = 55;
         rows = 33;
         rectSize = {
