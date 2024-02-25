@@ -2,8 +2,9 @@
     text-decoration: underline;
     font-family: "La Nord Semi Light";
 }
+
 .about {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .presenting {
@@ -23,18 +24,19 @@
     padding-right: 5px;
 }
 
-.image_matt img{
+.image_matt img {
     width: 93%;
     /*width: 85.71%;*/
-	height: auto;
+    height: auto;
 }
 
 .about_text {
-    width: 66.67%;
+    /* width: 66.67%; */
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     order: 2;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .bio {
@@ -42,7 +44,8 @@
     margin-left: 5px;
     /*width: 85.5%; */
     /*DUE COLONNE*/
-    width: 83.33%; 
+    /* width: 83.33%; */
+    width: 100%;
     /*-webkit-column-count: 2; */
     /*-moz-column-count: 2; */
     /*column-count: 2;*/
@@ -53,12 +56,12 @@
     -ms-hyphens: auto;
     hyphens: auto;
 
-    
+
     font-size: 1.96em;
     order: 1;
 }
 
-.curriculum{
+.curriculum {
     /*background-color: rgba(255, 0, 0, 0.3);*/
     width: 100%;
     display: flex;
@@ -68,15 +71,22 @@
     margin-top: 70px;
     margin-left: 5px;
     order: 2;
-    
+
 }
-.cv_group{
+
+.cv_group {
     /*width: calc(37.5% + 40px);*/
-    width: 39%;
+    /* width: 39%; */
+    width: 25%;
     display: flex;
     flex-direction: column;
     flex-flow: column;
 }
+
+.cv_group:nth-child(2) {
+    padding-left: 20px;
+}
+
 .cv_element {
     /*width: 100%;*/
     margin-top: 20px;
@@ -85,57 +95,66 @@
 }
 
 
+/* ==================== TABLET ==================== */
+@media (max-width: 1200px) {
+    .cv_group {
+        width: 50%;
+    }
+}
+
 /* ==================== MOBILE ==================== */
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px) {
     .presenting {
         display: flex;
         flex-flow: column;
         width: 100%;
         margin-top: 70px;
     }
-    
+
     .about_text {
         width: 99%;
         margin-top: 20px;
         padding-left: 5px;
-        padding-right: 5px; 
+        padding-right: 5px;
     }
-    
+
     .bio {
         /*background-color:yellow;*/
         margin-left: 5px;
         /*width: 85.5%; */
         /*DUE COLONNE*/
-        width: 100%; 
-        -webkit-column-count: 1; 
-        -moz-column-count: 1; 
+        width: 100%;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
         column-count: 1;
-        -webkit-column-gap: 0px; 
-        -moz-column-gap: 0px; 
+        -webkit-column-gap: 0px;
+        -moz-column-gap: 0px;
         column-gap: 0px;
 
 
         font-size: 1.4em;
         order: 1;
     }
-    
+
     .image_matt {
         /*background-color:aqua;*/
         width: 100%;
         text-align: left;
         padding-left: 5px;
     }
-    
-    .image_matt img{
+
+    .image_matt img {
         width: 100%;
-	   height: auto;
+        height: auto;
     }
-    
-    .curriculum{
+
+    .curriculum {
         width: 100%;
         font-size: 14pt;
+        flex-direction: column;
     }
-    .cv_group{
+
+    .cv_group {
         width: 100%;
     }
 
