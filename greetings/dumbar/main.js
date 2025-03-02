@@ -16,15 +16,15 @@ let particleMaxSize = 200;
 let particlePosOffset={d:-5, u:5} //down e up
 let radius = 82;
 const parentSketch = document.getElementById('sketch');
-const parentContent = document.getElementById('postcardContent')
+const parentContent = document.getElementById('content')
 
 
 
 let anim = [];
 
 function preload() {
-    img = loadImage("./greetings/afrika/assets/afrika5.png");
-    spritesheet = loadImage('./greetings/dumbar/assets/texture.png');
+    img = loadImage("assets/dumbar2.png");
+    spritesheet = loadImage('assets/texture.png');
 }
 
 function setup() {
@@ -135,16 +135,16 @@ class Particle {
 function reset() {
     let cnvWidth, cnvHeight
     if(windowWidth > 480){
-        cnvWidth = windowWidth/2;
+        cnvWidth = windowWidth * 0.7;
         cnvHeight = (cnvWidth/15)*9
 
         const parentTop = windowHeight/2.1 - cnvHeight/2
         const parentLeft = windowWidth/2 - cnvWidth/2
-        // parentContent.style.top = parentTop + "px";
-        // parentContent.style.left = parentLeft + "px";
-        particleDensity = 1.6
-        particleMaxSize= 120
-        particlePosOffset={d:-5, u:5} //down e up
+        parentContent.style.top = parentTop + "px";
+        parentContent.style.left = parentLeft + "px";
+        particleDensity = 1.2
+        particleMaxSize= 100
+        particlePosOffset={d:-2, u:1} //down e up
         radius = 82;
         isOnMobile = false
     } else {

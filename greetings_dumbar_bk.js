@@ -104,7 +104,7 @@ class Particle {
         let index = floor(this.idx) % this.length;
         this.index=0;
         if (mouseIsPressed) {
-            if (index != 19) {
+            if (index != 50) {
                 if (this.speed < 1.0) { this.speed += 0.6 }
             } else {
                 this.speed = 0;
