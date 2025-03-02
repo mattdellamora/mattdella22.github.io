@@ -1,39 +1,44 @@
 @font-face {
-  font-family: 'La Nord Light';
-  src: local('La Nord Light'),
-       url('/fonts/LaNord-Light.woff2') format('woff2'),
-       url('/fonts/LaNord-Light.woff') format('woff'),
-       url('/fonts/LaNord-Light.eot') format('embedded-opentype');
+    font-family: 'La Nord Light';
+    src: local('La Nord Light'),
+        url('/fonts/LaNord-Light.woff2') format('woff2'),
+        url('/fonts/LaNord-Light.woff') format('woff'),
+        url('/fonts/LaNord-Light.eot') format('embedded-opentype');
 }
 
 @font-face {
-  font-family: 'La Nord Semi Light';
-  src: local('La Nord Semi Light'),
-       url('/fonts/LaNord-SemiLight.woff2') format('woff2'),
-       url('/fonts/LaNord-SemiLight.woff') format('woff'),
-       url('/fonts/LaNord-SemiLight.eot') format('embedded-opentype');
+    font-family: 'La Nord Semi Light';
+    src: local('La Nord Semi Light'),
+        url('/fonts/LaNord-SemiLight.woff2') format('woff2'),
+        url('/fonts/LaNord-SemiLight.woff') format('woff'),
+        url('/fonts/LaNord-SemiLight.eot') format('embedded-opentype');
 }
 
 @font-face {
-  font-family: 'La Nord Regular';
-  src: local('La Nord Semi Light'),
-       url('/fonts/LaNord-Regular.woff2') format('woff2'),
-       url('/fonts/LaNord-Regular.woff') format('woff'),
-       url('/fonts/LaNord-Regular.eot') format('embedded-opentype');
+    font-family: 'La Nord Regular';
+    src: local('La Nord Semi Light'),
+        url('/fonts/LaNord-Regular.woff2') format('woff2'),
+        url('/fonts/LaNord-Regular.woff') format('woff'),
+        url('/fonts/LaNord-Regular.eot') format('embedded-opentype');
 }
 
 @font-face {
-  font-family: 'La Nord Bold';
-  src: local('La Nord Bold'),
-       url('/fonts/LaNord-Bold.woff2') format('woff2'),
-       url('/fonts/LaNord-Bold.woff') format('woff'),
-       url('/fonts/LaNord-Bold.eot') format('embedded-opentype');
+    font-family: 'La Nord Bold';
+    src: local('La Nord Bold'),
+        url('/fonts/LaNord-Bold.woff2') format('woff2'),
+        url('/fonts/LaNord-Bold.woff') format('woff'),
+        url('/fonts/LaNord-Bold.eot') format('embedded-opentype');
 }
-* { margin:0; padding:0; box-sizing:border-box; }
 
-a{
-	text-decoration: none;
-	color: black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 body {
@@ -42,37 +47,39 @@ body {
     width: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-/*    padding-left: 5px;
+    /*    padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;*/
-    
+
 }
+
 .main {
-/*    background-color: rgba(255, 0, 0, .2);*/
+    /*    background-color: rgba(255, 0, 0, .2);*/
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 0px;
     margin-left: 0px;
-    padding: 5px 5px 0px 5px; /*was 17px...*/
+    padding: 5px 5px 0px 5px;
+    /*was 17px...*/
 }
 
 /*Navbar*/
 .navbar {
-/*    background-color: green;*/
+    /*    background-color: green;*/
     height: 70px;
     /*border-bottom: 1px solid;*/
     display: flex;
     flex-flow: row wrap;
-    
+
 }
 
-.navbar ul{
-	list-style: none;
-	padding-left: 0;
+.navbar ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 .navElement {
-/*    background-color: aqua;*/
+    /*    background-color: aqua;*/
     width: 16.6%;
     justify-content: space-between;
     font-size: 1.4em;
@@ -85,12 +92,12 @@ body {
 }
 
 .contact {
-    width: 250px; 
+    width: 250px;
     font-size: 1em;
     text-decoration: underline;
     padding-left: 0px;
     order: 3;
-    
+
 }
 
 .about {
@@ -110,22 +117,22 @@ body {
     display: flex;
     margin-top: 70px;
     padding-left: 5px;
-    width: 100%; 
+    width: 100%;
     flex-flow: row wrap;
     position: relative;
 }
 
 .text_bio {
-/*    background-color: rgba(17, 150, 39, .2);*/
-    width: 82%; 
+    /*    background-color: rgba(17, 150, 39, .2);*/
+    width: 82%;
     font-size: 3.8em;
     line-height: 1.1em;
     letter-spacing: -0.03rem;
-    
+
 }
 
 .button_more {
-/*    background-color: chocolate;*/
+    /*    background-color: chocolate;*/
     margin-left: calc(66.6% + 10px);
     bottom: 0;
     /*left: 66.6%;*/
@@ -137,31 +144,46 @@ body {
     clear: both;
     display: flex;
     margin-top: 100px;
-    width: 100%; 
+    width: 100%;
     flex-flow: row wrap;
+    height: 100%;
 }
 
 .section_title {
-/*    background-color: violet;*/
-    width: 100%; 
+    /*    background-color: violet;*/
+    width: 100%;
     margin-bottom: 12px;
     padding-left: 5px;
 }
 
-.project_element{
+.project_element {
     width: 50%;
     padding-left: 5px;
-    padding-right: 5px; 
+    padding-right: 5px;
     margin-bottom: 40px;
+    height: 100%;
 }
 
-.project_image img{
-	width: 100%;
-	height: auto;
+.project_image img {
+    width: 100%;
+    height: auto;
+}
+
+.project_video {
+    background-color: #f2f2f2;
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    /* height: calc(500 * 1px); */
+    /* height: fit-content; */
+}
+
+.project_video iframe {
+    pointer-events: none;
 }
 
 /*FOOTER*/
-.footer{
+.footer {
     width: 100%;
     margin-top: 140px;
     display: flex;
@@ -176,44 +198,46 @@ body {
     padding-left: 5px;
 }
 
-.goUp{
+.goUp {
     width: 100%;
     padding-right: 5px;
     text-align: center;
 }
 
-.goUp img{
+.goUp img {
     /*position: absolute;*/
     /* margin-left: calc(50% - 22px); togliere metà img... */
     /* margin-right: 50%; */
     width: 45px;
-	height: auto;
+    height: auto;
 }
 
 
 /* ==================== MOBILE ==================== */
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 480px) {
     .body {
         font-family: "La Nord Regular";
         font-size: 18px;
     }
+
     .main {
-/*    background-color: rgba(255, 0, 0, .2);*/
+        /*    background-color: rgba(255, 0, 0, .2);*/
         width: calc(100% - 5px);
         padding: 0px 0px 0px 0px;
     }
-    
+
     /*NAVBAR*/
-	.navbar {
-    flex-flow: column;
-    height: auto;
-    
-}
+    .navbar {
+        flex-flow: column;
+        height: auto;
+
+    }
+
     .navElement {
         width: 100%;
         font-size: 1.4em;
     }
-    
+
     .name {
         width: 100%;
         padding-left: 5px;
@@ -236,64 +260,68 @@ body {
         padding-top: 30px;
         width: 100%;
     }
-    
+
     /*TEASER*/
     .teaser {
         display: flex;
         margin-top: 70px;
         margin-left: 5px;
-        width: 100%; 
+        width: 100%;
         flex-flow: column;
     }
-    
+
     .text_bio {
-/*    background-color: rgba(17, 150, 39, .2);*/
-    width: 99%; 
-    font-size: 1.96em;
-        
+        /*    background-color: rgba(17, 150, 39, .2);*/
+        width: 99%;
+        font-size: 1.96em;
+
     }
-    
+
     .button_more {
-/*    background-color: chocolate;*/
+        /*    background-color: chocolate;*/
         margin-left: 0px;
         width: calc(100% - 5px);
         padding-top: 20px;
         font-size: 18px;
-}
-    
-     /*PROJECTS*/
+    }
+
+    /*PROJECTS*/
     .projects_container {
         margin-top: 70px;
         flex-flow: column wrap;
-    }   
-    
-    .project_element{
+    }
+
+    .project_element {
         width: 100%;
         padding-left: 5px;
-        padding-right: 5px; 
+        padding-right: 5px;
     }
-    
+
     /*FOOTER*/
-    .goUp img{
+    .goUp img {
         margin-left: calc(50% - 17px);
         width: 35px;
-	    height: auto;
+        height: auto;
     }
-    
-}/*chiude media query*/
+
+}
+
+/*chiude media query*/
 
 /* ==================== IPHONE X ==================== */
 /*Riportato bug su iphone X... si può scrollare orizzontalmente. Il main occupa orizzontalmente 0.2px in più...*/
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3){
-    html, body {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+
+    html,
+    body {
         max-width: 100% !important;
         overflow-x: hidden !important;
     }
+
     .main {
         width: calc(100% - 5px);
     }
 }
+
 */
-
-
