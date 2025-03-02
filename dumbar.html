@@ -8,9 +8,30 @@
     <meta name="keywords"
         content="mattia, dellamora, swizerland, graphic, design, visual communication, visual design, mattia dellamora, matt dellamora, mattdellamora.ch, portfolio, animation, logo, grafica, web" />
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href=" ./greetings/stylesheet_greetings.css">
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="reset.css" />
+    <style>
+        .postcard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #postcardContent {
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            display: flex;
+            flex-flow: column wrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,14 +46,28 @@
                 <a href="about.html">about</a>
             </div>
         </div>
+        <div class="postcard">
+            <!-- <div class="section_title">POSTCARD</div> -->
+
+            <div class="navElement blank">
+
+            </div>
+            <div id="postcardContent">
+                <div id="sketch"></div>
+                <div class="greeting-text">from: Mattia Dellamora, Ticino<br>to: Afrika design studio, Zürich
+                    <br>message:
+                    hover to discover!
+                </div>
+            </div>
+        </div>
         <div class="teaser">
-            <div class="text_bio">Graphic designer based in Zurich, Switzerland. Focus on digital interactions, love for
-                good typography.</div>
+            <div class="text_bio">Hi Dumbar :) this is a curated list of projects i picked just for you.
+            </div>
         </div>
         <div class="projects_container">
             <div class="section_title">PROJECTS</div>
             <div class="project_element" style="order: 0">
-                <a href="project_merJahber.html">
+                <a href="./projects_dumbar/project_merJahber.html">
                     <div class="project_video">
                         <iframe
                             src="https://player.vimeo.com/video/1061759330?h=e1bc2659dd&autoplay=1&loop=1&autopause=0&background=1&title=0&byline=0&portrait=0"
@@ -135,6 +170,8 @@
             <a href="#top"><img src="img/arrowUp.png" /></a>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="greetings_dumbar.js"></script>
     <script>
         const resizeVideos = () => {
             // set video size
