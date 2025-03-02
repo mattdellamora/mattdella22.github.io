@@ -139,7 +139,8 @@
         const resizeVideos = () => {
             // set video size
             const allVidsContainers = document.querySelectorAll(".project_video");
-            const newHeight = ((window.innerWidth * 0.5) - 14) / 1.5;
+            const responsiveScale = window.innerWidth <= 480 ? 1 : 0.5;
+            const newHeight = ((window.innerWidth * responsiveScale) - 14) / 1.5;
             console.log(window.innerWidth)
 
             allVidsContainers.forEach((item) => {
