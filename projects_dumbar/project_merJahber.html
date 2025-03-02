@@ -7,11 +7,20 @@
         content="Mattia Dellamora portfolio website. Graphic design, switzerland. Visual identity, editorial design, web design, animation" />
     <meta name="keywords"
         content="mattia, dellamora, swizerland, graphic, design, visual communication, visual design, mattia dellamora, matt dellamora, mattdellamora.ch, grafica, Mendrisio, city, brand, branding, identity" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-    <link rel="stylesheet" type="text/css" href="stylesheet_projects.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../stylesheet_projects.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="../reset.css" />
+    <style>
+        .project_video {
+            background-color: unset !important;
+            position: relative;
+            width: 100%;
+        }
+
+        @media (min-width: 320px) and (max-width: 480px) {}
+    </style>
 </head>
 
 <body>
@@ -45,15 +54,24 @@
             </div>
             <div class="project_content">
                 <div class="pj_description">
-                    Nadine Curanz's Portfolio<br />
-                    Website development <br />
+                    Stiftung Mercator Schweiz - Jahresbericht<br />
+                    Website design and development<br />
                     <br />
                     Nadine is a working professional from Ascona, with a strong focus on editorial projets.
                     Together with her, I designed a website which displays her works and I developed the infrastructure
                     from scratch. For this website, it was important to display Nadine's project generously and let the
                     singularities and the materiality of the works shine trough.
                     <a href="https://nadinecuranz.ch" target="_blank">Clic here to visit her website. </a><br /><br />
-                    graphic design, javascript, web developement
+                    graphic design, web developement, next.js
+                </div>
+                <!-- 1061776211 -->
+                <div class="pj_img">
+                    <div class="project_video">
+                        <iframe
+                            src="https://player.vimeo.com/video/1061776211?h=e1bc2659dd&autoplay=1&loop=1&autopause=0&background=1&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="pj_img"><img src="img/project_images/nadineCuranz/pj_nadineCuranz_01.png" /></div>
                 <div class="pj_img"><img src="img/project_images/nadineCuranz/pj_nadineCuranz_02.png" /></div>
@@ -64,9 +82,29 @@
     <!--chiude main-->
     <div class="footer">
         <div class="goUp">
-            <a href="#top"><img src="img/arrowUp.png" /></a>
+            <a href="#top"><img src="../img/arrowUp.png" /></a>
         </div>
     </div>
+
+    <script>
+        const resizeVideos = () => {
+            // set video size
+            const allVidsContainers = document.querySelectorAll(".project_video");
+            const responsiveScale = window.innerWidth <= 480 ? 1 : 0.5;
+            const newHeight = ((window.innerWidth * responsiveScale) - 14) / 1.5;
+            console.log(window.innerWidth)
+
+            allVidsContainers.forEach((item) => {
+                item.style.height = `${newHeight}px`;
+            })
+        }
+
+        window.addEventListener("resize", (event) => {
+            resizeVideos();
+        });
+
+        resizeVideos();
+    </script>
 </body>
 
 </html>
