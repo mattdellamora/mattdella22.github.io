@@ -297,6 +297,8 @@ body {
         padding-right: 5px;
     }
 
+    .project_video {}
+
     /*FOOTER*/
     .goUp img {
         margin-left: calc(50% - 17px);
