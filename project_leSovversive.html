@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mattia Dellamora</title>
+    <meta name="description"
+        content="Mattia Dellamora portfolio website. Graphic design, switzerland. Visual identity, editorial design, web design, animation" />
+    <meta name="keywords"
+        content="mattia, dellamora, swizerland, graphic, design, visual communication, visual design, mattia dellamora, matt dellamora, mattdellamora.ch, grafica, Mendrisio, city, brand, branding, identity" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet_projects.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="navElement name">
+                <a href="index.html"><u>Mattia Dellamora</u></a>
+            </div>
+            <div class="navElement contact">
+                <a href="mailto:mattia.dellamora@gmail.com">mattia.dellamora@gmail.com</a><br />
+                <a href="https://www.instagram.com/matt.dellamora/" target="_blank">instagram.com/matt.dellamora</a>
+            </div>
+            <div class="navElement about">
+                <a href="about.html">about</a>
+            </div>
+        </div>
+        <div class="project_container">
+            <div class="project_menu">
+                <div class="pjMenu_title">PROJECTS</div>
+                <div class="pjMenu_list">
+                    -> Le Sovversive <br />
+                    <a href="project_monteGioia.html">-> <u>Monte Gioia</u></a><br />
+                    <a href="project_nadineCuranz.html">-> <u>Nadine Curanz's Portfolio</u></a><br />
+                    <a href="project_jungeGrafik23.html">-> <u>Junge Grafik Publication</u></a><br />
+                    <a href="project_luoghiVoci.html">-> <u>Luoghi e Voci</u></a><br />
+                    <a href="project_lorenzoTerzaghi.html">-> <u>Lorenzo Terzaghi's website</u></a><br />
+                    <a href="project_brianEno.html">-> <u>Brian Eno, an audio visualizer</u></a><br />
+                    <a href="project_nemesi.html">-> <u>NEMESI</u></a><br />
+                    <a href="project_gala.html">-> <u>Gala</u></a><br />
+                    <a href="project_coding.html">-> <u>Creative Coding</u></a><br />
+                    <a href="project_pizzighin.html">-> <u>PIZZIGHIN</u></a><br />
+                </div>
+            </div>
+            <div class="project_content">
+                <div class="pj_description">
+                    Le Sovversive<br />
+                    Festival's Visual Identity <br />
+                    <br />
+                    Le Sovversive is a transdisciplinary and intersectional festival dedicated to bottom-up movements.
+                    The first edition in 2025 focused on exploring gender and sexuality as political, affective, and
+                    transformative territories.
+                    Communication took place mainly on social media. A system was designed to accommodate different
+                    types of content through the use of frames and colors. In the absence of visual materials to promote
+                    individual events or information, the same visual system was used to create illustrations or motion
+                    graphics.
+                    <br /><br />
+                    graphic design, editorial design, print
+                </div>
+                <div class="project_video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1166661786?h=e1bc2659dd&autoplay=1&loop=1&autopause=0&background=1&title=0&byline=0&portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_03.jpg" /></div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_01.jpg" /></div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_07.jpg" /></div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_05.jpg" /></div>
+                <div class="project_video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1166644594?h=e1bc2659dd&autoplay=1&loop=1&autopause=0&background=1&title=0&byline=0&portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_02.jpg" /></div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_08.jpg" /></div>
+                <div class="pj_img"><img src="img/project_images/lesovversive/pj_lesovversive_04.jpg" /></div>
+                <div class="project_video">
+                    <iframe
+                        src="https://player.vimeo.com/video/1166649006?h=e1bc2659dd&autoplay=1&loop=1&autopause=0&background=1&title=0&byline=0&portrait=0"
+                        style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                        allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--chiude main-->
+    <div class="footer">
+        <div class="goUp">
+            <a href="#top"><img src="img/arrowUp.png" /></a>
+        </div>
+    </div>
+    <script>
+        const resizeVideos = () => {
+            // set video size
+            const allVidsContainers = document.querySelectorAll(".project_video");
+            const responsiveScale = window.innerWidth <= 480 ? 1 : 0.5;
+            const newHeight = ((window.innerWidth * responsiveScale) - 14) / 1.5;
+            console.log(window.innerWidth)
+
+            allVidsContainers.forEach((item) => {
+                item.style.height = `${newHeight}px`;
+            })
+        }
+
+        window.addEventListener("resize", (event) => {
+            resizeVideos();
+        });
+
+        resizeVideos();
+    </script>
+</body>
+
+</html>
